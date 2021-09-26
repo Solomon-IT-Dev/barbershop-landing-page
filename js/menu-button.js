@@ -1,4 +1,3 @@
-
     (() =>{
         const menuBtmRef = document.querySelector("[data-menu-button]");
         const mobilMenuRef = document.querySelector("[data-menu]");

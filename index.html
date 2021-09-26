@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbershop</title>
+    <title>BarberShop</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body id="scroll">
+
     <header class="header">
         <aside class="sidebar">
             <div class="sidevar__list">
@@ -21,44 +23,44 @@
             </div>
         </aside>
 
-            <svg class="logo-img" width="70px" height="55px">
-                <use href='./images/icons/sprite.svg#icon-logo'></use>
+        <svg class="logo-img" width="70px" height="55px">
+            <use href='./images/icons/sprite.svg#icon-logo'></use>
+        </svg>
+        <button type="button" class="menu__button" aria-expanded="false" aria-controls="navbar" data-menu-button>
+            <svg  class="menu-icon" width="24" height="24px" aria-label="Переключатель мобильного меню"> 
+              <use class="menu__icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>
+              <use class="menu__icon-cross" href="./images/icons/sprite.svg#icon-close"></use>
             </svg>
-            <button type="button" class="menu__button" aria-expanded="false" aria-controls="navbar" data-menu-button>
-                <svg  class="menu-icon" width="24" height="24px" aria-label="Переключатель мобильного меню"> 
-                  <use class="menu__icon-menu" href="./images/icons/sprite.svg#icon-menu"></use>
-                  <use class="menu__icon-cross" href="./images/icons/sprite.svg#icon-close"></use>
-                </svg>
-              </button>
-            <div class="container">
-                <nav class="navbar" id="navbar" data-menu>
-                    <div class="nav-holder">
-                        <ul class="site-nav__list">
-                            <li class="site-nav__item"><a href="#about-section" class="site-nav__link" >О нас</a></li>
-                            <li class="site-nav__item"><a href="#price-section" class="site-nav__link" >Услуги и цены</a></li>
-                            <li class="site-nav__item"><a href="#masters-section" class="site-nav__link" >Мастера</a></li>
-                            <li class="site-nav__item"><a href="#footer" class="site-nav__link" >Контакты</a></li>
-                        </ul>
-                        <div class="auth-nav__list">
-                            <a href="tel:+380441111111" class="auth-nav__link">+38 044 111 11 11</a>
-                            <a href="#footer" class="auth-nav__btn" >Онлайн запись</a>
-                        </div>
-                        <div class="network__list">
-                            <a href="#" class="network__link">Instagram</a>
-                            <a href="#" class="network__link">YouTube</a>
-                        </div>
+        </button>
+        <div class="container">
+            <nav class="navbar" id="navbar" data-menu>
+                <div class="nav-holder">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item"><a href="#about-section" class="site-nav__link" >О нас</a></li>
+                        <li class="site-nav__item"><a href="#price-section" class="site-nav__link" >Услуги и цены</a></li>
+                        <li class="site-nav__item"><a href="#masters-section" class="site-nav__link" >Мастера</a></li>
+                        <li class="site-nav__item"><a href="#footer" class="site-nav__link" >Контакты</a></li>
+                    </ul>
+                    <div class="auth-nav__list">
+                        <a href="tel:+380441111111" class="auth-nav__link">+38 044 111 11 11</a>
+                        <a href="#footer" class="auth-nav__btn" >Онлайн запись</a>
                     </div>
-                </nav>
-            </div>
-
-            <div class="slider">
-                <div class="hero">
-                    <span class="hero__suptitle">A hair salon for men in Kyiv</span>
-                    <h1 class="hero__title">BarberShop</h1>
-                    <p class="hero__decription">Мы эксперты в модных мужских стрижках. 
-                        Работаем быстро, осторожно и со вкусом.</p>
+                    <div class="network__list">
+                        <a href="#" class="network__link">Instagram</a>
+                        <a href="#" class="network__link">YouTube</a>
+                    </div>
                 </div>
+            </nav>
+        </div>
+
+        <div class="slider">
+            <div class="hero">
+                <span class="hero__suptitle">A hair salon for men in Kyiv</span>
+                <h1 class="hero__title">BarberShop</h1>
+                <p class="hero__decription">Мы эксперты в модных мужских стрижках. 
+                    Работаем быстро, осторожно и со вкусом.</p>
             </div>
+         </div>
     </header>
 
     <main>
@@ -70,17 +72,16 @@
                     <img class="about__img--tablet" src="./images/About/about1.jpg " alt="А потом вот так опасной бритвой бреем">
                     <img class="about__img--tablet" src="./images/About/about2.jpg " alt="А потом вот так опасной бритвой бреем">
                 </div>
-            <div class="about-info">
-                <span class="about__suptitle">О НАС</span>
-                <h2 class="about__title">Лучший Барбершоп
-                    твоего города</h2>
-                <span class="about__subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</span>
-                <p class="about__decriotion">Мы команда, которая никогда не останавливается на достигнутом 
-                    и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
-                    то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-
-                <a href="#footer" class="about__btn">Онлайн запись</a>
-            </div>
+                <div class="about-info">
+                    <span class="about__suptitle">О НАС</span>
+                    <h2 class="about__title">Лучший Барбершоп твоего города</h2>
+                    <span class="about__subtitle">Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</span>
+                    <p class="about__decriotion">Мы команда, которая никогда не останавливается на достигнутом 
+                        и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
+                        то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". 
+                        Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
+                    <a href="#footer" class="about__btn">Онлайн запись</a>
+                </div>
             </div>
         </section>
 
@@ -151,11 +152,11 @@
                         </li>
                     </ul>
                 </div>
-            <div class="features-info">
-                <span class="features__suptitle">старая традиционная школа</span>
-                <h2 class="features__title">Почему приходят именно к нам?</h2>
-                <span class="features__subtitle">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </span>
-            </div>
+                <div class="features-info">
+                    <span class="features__suptitle">старая традиционная школа</span>
+                    <h2 class="features__title">Почему приходят именно к нам?</h2>
+                    <span class="features__subtitle">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </span>
+                </div>
             </div>
         </section>
 
